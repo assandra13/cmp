@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ff6b35;
+  --primary-dark: #e85a2a;
+  --secondary: #2a2a2a;
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --muted: #f5f5f5;
+  --muted-foreground: #737373;
+  --border: #e5e5e5;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container {
+  @apply px-4 mx-auto max-w-7xl;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-md transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-gray-100 text-secondary font-medium py-3 px-6 rounded-md border border-gray-300 transition-all duration-300;
+}
+
+.btn-outline {
+  @apply bg-transparent hover:bg-primary/10 text-primary font-medium py-3 px-6 rounded-md border border-primary transition-all duration-300;
+}
+
+.nav-link {
+  @apply text-white hover:text-primary transition-colors duration-300;
+}
+
+.nav-link-dark {
+  @apply text-secondary hover:text-primary transition-colors duration-300;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold mb-4;
+}
+
+.section-subtitle {
+  @apply text-lg text-muted-foreground mb-12 max-w-2xl mx-auto;
+}
