@@ -73,7 +73,7 @@ export default function TestimonialSection() {
                   ))}
                 </div>
 
-                <p className="text-gray-700 italic mb-4">"{testimonials[currentIndex].content}"</p>
+                <p className="text-gray-700 italic mb-4">&quot;{testimonials[currentIndex].content}&quot;</p>
 
                 <div>
                   <h4 className="font-bold text-lg">{testimonials[currentIndex].name}</h4>
